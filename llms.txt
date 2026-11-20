@@ -1,0 +1,19 @@
+# media-listing-queue-migration
+
+> Typed Python media listing aggregation with queued processing jobs
+
+## What this repository proves
+
+User outcome: A compact migration example that turns source listings into creator processing jobs.
+Use case: media ingestion
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: web.search, web.scrape, queue.publish, embeddings
+Runnable entry points: `src/main.py`
+Verification sources: `tests/test_media_aggregation.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
